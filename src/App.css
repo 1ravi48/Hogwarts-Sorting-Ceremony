@@ -18,12 +18,41 @@
 
 .sorting-hat {
   position: absolute;
-  height: 80%;
-  width: auto;
   left: 50%;
   top: 50%;
+  width: 20%;
+  height: auto;
   transform: translate(
     -50%,
-    -55%
+    -50%
   ); /* moves the element backwards on the x and y axis by 50% of its own width and height respectively - ultimately centering it perfectly*/
+}
+
+.sorting-hat-enlarged {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 25%;
+  height: auto;
+  transform: translate(
+    -50%,
+    -50%
+  ); /* moves the element backwards on the x and y axis by 50% of its own width and height respectively - ultimately centering it perfectly*/
+}
+
+.sorting-hat-greet {
+  position: absolute;
+  left: 50%;
+  top: 72%;
+  transform: translate(-50%);
+  background-color: white;
+  font-size: 150%;
+  padding: 1%;
+  font-family: "Courier New", Courier, monospace;
+  border: solid;
+  border-radius: 10px;
+}
+
+.sorting-hat-not-greet {
+  display: none;
 }
