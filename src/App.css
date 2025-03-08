@@ -1,0 +1,16 @@
+.four-colours {
+  width: 1100px;
+  height: 100vh;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  justify-content: space-between;
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
