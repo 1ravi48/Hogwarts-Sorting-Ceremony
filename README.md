@@ -1,1 +1,1 @@
-# Hogwarts-Sorting-Ceremony
+# HOGWARTS-SORTING-CEREMONY
