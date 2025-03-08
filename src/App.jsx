@@ -10,6 +10,7 @@ export default function App() {
         <HouseColourBackground backgroundColor="#222f5b" />
         <HouseColourBackground backgroundColor="#ecb939" />
       </div>
+      <img src="../public/sorting-hat.svg" className="sorting-hat" />
     </div>
   );
 }
