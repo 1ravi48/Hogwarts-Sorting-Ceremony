@@ -38,6 +38,7 @@
     -50%,
     -50%
   ); /* moves the element backwards on the x and y axis by 50% of its own width and height respectively - ultimately centering it perfectly*/
+  cursor: pointer;
 }
 
 .sorting-hat-greet {
