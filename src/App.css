@@ -88,7 +88,7 @@
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  top: 32%;
+  top: 30.5%;
   color: #262626;
   font-family: "Courier New", Courier, monospace;
   text-align: center;
@@ -98,7 +98,7 @@
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  top: 42%;
+  top: 40%;
   width: 28%;
   color: #262626;
   text-align: center;
@@ -106,22 +106,22 @@
 
 .backward-icon {
   position: absolute;
-  color: #f8f4e1;
+  color: #262626;
   left: 50%;
   transform: translate(-50%);
-  top: 75%;
-  width: 5%;
+  top: 57%;
+  width: 2.5%;
   height: auto;
   cursor: pointer;
 }
 
 .backward-icon-enlarged {
   position: absolute;
-  color: #f8f4e1;
+  color: #262626;
   left: 50%;
   transform: translate(-50%);
-  top: 75%;
-  width: 7%;
+  top: 57%;
+  width: 3.5%;
   height: auto;
   cursor: pointer;
 }

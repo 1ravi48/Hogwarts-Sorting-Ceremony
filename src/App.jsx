@@ -6,20 +6,21 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBackward } from "@fortawesome/free-solid-svg-icons";
 
 export default function App() {
-  const [isHover, setIsHover] = useState(false);
+  const [isHatHover, setIsHatHover] = useState(false);
   const [question, setQuestion] = useState(0);
   const [isBackHover, setIsBackHover] = useState(false);
 
-  function handleHover() {
-    setIsHover(true);
+  function handleHatHover() {
+    setIsHatHover(true);
   }
 
-  function handleNotHover() {
-    setIsHover(false);
+  function handleHatLeave() {
+    setIsHatHover(false);
   }
 
-  function handleClick() {
+  function handleHatClick() {
     setQuestion(question + 1);
+    setIsBackHover(false);
   }
 
   function handleBackHover() {
@@ -32,6 +33,7 @@ export default function App() {
 
   function handleBackClick() {
     setQuestion(question - 1);
+    setIsHatHover(false);
   }
 
   return (
@@ -56,16 +58,16 @@ export default function App() {
           />
           <img
             src="../public/hogwarts-sorting-hat.png"
-            className={isHover ? "sorting-hat-enlarged" : "sorting-hat"}
-            onMouseEnter={handleHover}
-            onMouseLeave={handleNotHover}
-            onClick={handleClick}
+            className={isHatHover ? "sorting-hat-enlarged" : "sorting-hat"}
+            onMouseEnter={handleHatHover}
+            onMouseLeave={handleHatLeave}
+            onClick={handleHatClick}
           />
           <p
-            className={isHover ? "sorting-hat-greet" : "sorting-hat-not-greet"}
-            onMouseEnter={handleHover}
-            onMouseLeave={handleNotHover}
-            onClick={handleClick}
+            className={isHatHover ? "sorting-hat-greet" : "sorting-hat-not-greet"}
+            onMouseEnter={handleHatHover}
+            onMouseLeave={handleHatLeave}
+            onClick={handleHatClick}
           >
             Let's begin the <br /> sorting ceremony...
           </p>
