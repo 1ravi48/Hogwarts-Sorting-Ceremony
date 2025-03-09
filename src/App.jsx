@@ -16,19 +16,35 @@ export default function App() {
   return (
     <div className="page">
       <div className="four-colours">
-        <HouseColourBackground backgroundColor="#ae0001" />
-        <HouseColourBackground backgroundColor="#1a472a" />
-        <HouseColourBackground backgroundColor="#222f5b" />
-        <HouseColourBackground backgroundColor="#ecb939" />
+        <HouseColourBackground
+          backgroundColor="#95103b"
+          imagePath="../public/gryffindor-logo.png"
+        />
+        <HouseColourBackground
+          backgroundColor="#1d7452"
+          imagePath="../public/slytherin-logo.png"
+        />
+        <HouseColourBackground
+          backgroundColor="#97b6d3"
+          imagePath="../public/ravenclaw-logo.png"
+        />
+        <HouseColourBackground
+          backgroundColor="#ffebb9"
+          imagePath="../public/hufflepuff-logo.png"
+        />
+        <img
+          src="../public/hogwarts-sorting-hat.png"
+          className={isHover ? "sorting-hat-enlarged" : "sorting-hat"}
+          onMouseEnter={handleHover}
+          onMouseLeave={handleNotHover}
+        />
       </div>
-      <img
-        src="../public/hogwarts-sorting-hat.png"
-        className={isHover ? "sorting-hat-enlarged" : "sorting-hat"}
+      <p
+        className={isHover ? "sorting-hat-greet" : "sorting-hat-not-greet"}
         onMouseEnter={handleHover}
         onMouseLeave={handleNotHover}
-      />
-      <p className={isHover ? "sorting-hat-greet" : "sorting-hat-not-greet"}>
-        Click me to begin the sorting ceremony
+      >
+        Let's begin the <br /> sorting ceremony...
       </p>
     </div>
   );
