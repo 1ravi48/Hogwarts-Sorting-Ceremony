@@ -36,6 +36,10 @@ export default function App() {
     setIsHatHover(false);
   }
 
+  function handleAnswerSelection() {
+    setQuestion(question+1);
+  }
+
   return (
     <div className="page">
       {question === 0 ? (
@@ -64,7 +68,9 @@ export default function App() {
             onClick={handleHatClick}
           />
           <p
-            className={isHatHover ? "sorting-hat-greet" : "sorting-hat-not-greet"}
+            className={
+              isHatHover ? "sorting-hat-greet" : "sorting-hat-not-greet"
+            }
             onMouseEnter={handleHatHover}
             onMouseLeave={handleHatLeave}
             onClick={handleHatClick}
@@ -74,12 +80,12 @@ export default function App() {
         </div>
       ) : (
         <div className="answer-choices">
-          <AnswerChoice />
-          <AnswerChoice />
-          <AnswerChoice />
-          <AnswerChoice />
+          <AnswerChoice onAnswerClick={handleAnswerSelection}/>
+          <AnswerChoice onAnswerClick={handleAnswerSelection}/>
+          <AnswerChoice onAnswerClick={handleAnswerSelection}/>
+          <AnswerChoice onAnswerClick={handleAnswerSelection}/>
           <img src="/parchment.png" className="parchment"></img>
-          <h1 className="question-heading">Question 1</h1>
+          <h1 className="question-heading">Question {question}</h1>
           <p className="question-text">
             Here is an example of a question. What is your favourite colour?
           </p>
