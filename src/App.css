@@ -62,3 +62,66 @@
 .sorting-hat-not-greet {
   display: none;
 }
+
+.parchment {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 45%;
+  height: auto;
+  transform: translate(-50%, -58%);
+}
+
+.answer-choices {
+  position: relative;
+  width: 1100px;
+  height: 100vh;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  justify-content: space-between;
+  gap: 6%; /*for whatever reason, having a gap value of min 6% ensures 2 flex items per row and solves the flex wrapping issue*/
+}
+
+.question-heading {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 32%;
+  color: #262626;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+}
+
+.question-text {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 42%;
+  width: 28%;
+  color: #262626;
+  text-align: center;
+}
+
+.backward-icon {
+  position: absolute;
+  color: #f8f4e1;
+  left: 50%;
+  transform: translate(-50%);
+  top: 75%;
+  width: 5%;
+  height: auto;
+  cursor: pointer;
+}
+
+.backward-icon-enlarged {
+  position: absolute;
+  color: #f8f4e1;
+  left: 50%;
+  transform: translate(-50%);
+  top: 75%;
+  width: 7%;
+  height: auto;
+  cursor: pointer;
+}

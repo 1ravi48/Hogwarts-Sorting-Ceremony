@@ -1,0 +1,16 @@
+.answer-choice-div {
+  height: 40%;
+  width: 30%;
+  border-radius: 10px;
+  background-color: #f8f4e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.answer-choice-text {
+  font-family: "Courier New", Courier, monospace;
+  color: #262626;
+  font-size: 150%;
+  text-align: center;
+}
