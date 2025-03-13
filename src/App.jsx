@@ -27,65 +27,69 @@ export default function App() {
   }
 
   function handleAnswerSelection() {
-    setQuestion(question+1);
+    setQuestion(question + 1);
   }
 
-  return (
-    <div className="page">
-      {question === 0 ? (
-        <div className="four-colours">
-          <HouseColourBackground
-            backgroundColor="#95103b"
-            imagePath="../public/gryffindor-logo.png"
-          />
-          <HouseColourBackground
-            backgroundColor="#1d7452"
-            imagePath="../public/slytherin-logo.png"
-          />
-          <HouseColourBackground
-            backgroundColor="#97b6d3"
-            imagePath="../public/ravenclaw-logo.png"
-          />
-          <HouseColourBackground
-            backgroundColor="#ffebb9"
-            imagePath="../public/hufflepuff-logo.png"
-          />
-          <img
-            src="../public/hogwarts-sorting-hat.png"
-            className={isHatHover ? "sorting-hat-enlarged" : "sorting-hat"}
-            onMouseEnter={handleHatHover}
-            onMouseLeave={handleHatLeave}
-            onClick={handleHatClick}
-          />
-          <p
-            className={
-              isHatHover ? "sorting-hat-greet" : "sorting-hat-not-greet"
-            }
-            onMouseEnter={handleHatHover}
-            onMouseLeave={handleHatLeave}
-            onClick={handleHatClick}
-          >
-            Let's begin the <br /> sorting ceremony...
-          </p>
-        </div>
-      ) : (
-        <div className="answer-choices">
-          <AnswerChoice onAnswerClick={handleAnswerSelection}/>
-          <AnswerChoice onAnswerClick={handleAnswerSelection}/>
-          <AnswerChoice onAnswerClick={handleAnswerSelection}/>
-          <AnswerChoice onAnswerClick={handleAnswerSelection}/>
-          <img src="/parchment.png" className="parchment"></img>
-          <h1 className="question-heading">Question {question}</h1>
-          <p className="question-text">
-            Here is an example of a question. What is your favourite colour?
-          </p>
-          <FontAwesomeIcon
-            icon={faBackward}
-            className="backward-icon"
-            onClick={handleBackClick}
-          />
-        </div>
-      )}
-    </div>
-  );
+  let pageContent;
+
+  if (question === 0) {
+    pageContent = (
+      <div className="four-colours">
+        <HouseColourBackground
+          backgroundColor="#95103b"
+          imagePath="../public/gryffindor-logo.png"
+        />
+        <HouseColourBackground
+          backgroundColor="#1d7452"
+          imagePath="../public/slytherin-logo.png"
+        />
+        <HouseColourBackground
+          backgroundColor="#97b6d3"
+          imagePath="../public/ravenclaw-logo.png"
+        />
+        <HouseColourBackground
+          backgroundColor="#ffebb9"
+          imagePath="../public/hufflepuff-logo.png"
+        />
+        <img
+          src="../public/hogwarts-sorting-hat.png"
+          className={isHatHover ? "sorting-hat-enlarged" : "sorting-hat"}
+          onMouseEnter={handleHatHover}
+          onMouseLeave={handleHatLeave}
+          onClick={handleHatClick}
+        />
+        <p
+          className={isHatHover ? "sorting-hat-greet" : "sorting-hat-not-greet"}
+          onMouseEnter={handleHatHover}
+          onMouseLeave={handleHatLeave}
+          onClick={handleHatClick}
+        >
+          Let's begin the <br /> sorting ceremony...
+        </p>
+      </div>
+    );
+  } else if (question >= 1 && question <= 10) {
+    pageContent = (
+      <div className="answer-choices">
+        <AnswerChoice onAnswerClick={handleAnswerSelection} />
+        <AnswerChoice onAnswerClick={handleAnswerSelection} />
+        <AnswerChoice onAnswerClick={handleAnswerSelection} />
+        <AnswerChoice onAnswerClick={handleAnswerSelection} />
+        <img src="/parchment.png" className="parchment"></img>
+        <h1 className="question-heading">Question {question}</h1>
+        <p className="question-text">
+          Here is an example of a question. What is your favourite colour?
+        </p>
+        <FontAwesomeIcon
+          icon={faBackward}
+          className="backward-icon"
+          onClick={handleBackClick}
+        />
+      </div>
+    );
+  } else {
+    pageContent = <p>You have finished the quiz</p>;
+  }
+
+  return <div className="page">{pageContent}</div>;
 }
