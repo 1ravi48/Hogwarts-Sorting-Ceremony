@@ -9,7 +9,7 @@ const questionsArray = [
   {
     questionNumber: 1,
     questionText:
-      "This is question number 1. Please answer the question being asked of you by selection one of the four options",
+      "This is question number 1. Please answer the question being asked of you by selecting one of the four options",
     answerChoices: [
       "This is the answer pertaining to Gryffindor",
       "This is the answer pertaining to Slytherin",
@@ -20,7 +20,7 @@ const questionsArray = [
   {
     questionNumber: 2,
     questionText:
-      "This is question number 2. Please answer the question being asked of you by selection one of the four options",
+      "This is question number 2. Please answer the question being asked of you by selecting one of the four options",
     answerChoices: [
       "This is the answer pertaining to Gryffindor",
       "This is the answer pertaining to Slytherin",
@@ -31,7 +31,7 @@ const questionsArray = [
   {
     questionNumber: 3,
     questionText:
-      "This is question number 3. Please answer the question being asked of you by selection one of the four options",
+      "This is question number 3. Please answer the question being asked of you by selecting one of the four options",
     answerChoices: [
       "This is the answer pertaining to Gryffindor",
       "This is the answer pertaining to Slytherin",
@@ -42,7 +42,7 @@ const questionsArray = [
   {
     questionNumber: 4,
     questionText:
-      "This is question number 4. Please answer the question being asked of you by selection one of the four options",
+      "This is question number 4. Please answer the question being asked of you by selecting one of the four options",
     answerChoices: [
       "This is the answer pertaining to Gryffindor",
       "This is the answer pertaining to Slytherin",
@@ -53,7 +53,7 @@ const questionsArray = [
   {
     questionNumber: 5,
     questionText:
-      "This is question number 5. Please answer the question being asked of you by selection one of the four options",
+      "This is question number 5. Please answer the question being asked of you by selecting one of the four options",
     answerChoices: [
       "This is the answer pertaining to Gryffindor",
       "This is the answer pertaining to Slytherin",
@@ -64,7 +64,7 @@ const questionsArray = [
   {
     questionNumber: 6,
     questionText:
-      "This is question number 6. Please answer the question being asked of you by selection one of the four options",
+      "This is question number 6. Please answer the question being asked of you by selecting one of the four options",
     answerChoices: [
       "This is the answer pertaining to Gryffindor",
       "This is the answer pertaining to Slytherin",
@@ -75,7 +75,7 @@ const questionsArray = [
   {
     questionNumber: 7,
     questionText:
-      "This is question number 7. Please answer the question being asked of you by selection one of the four options",
+      "This is question number 7. Please answer the question being asked of you by selecting one of the four options",
     answerChoices: [
       "This is the answer pertaining to Gryffindor",
       "This is the answer pertaining to Slytherin",
@@ -86,7 +86,7 @@ const questionsArray = [
   {
     questionNumber: 8,
     questionText:
-      "This is question number 8. Please answer the question being asked of you by selection one of the four options",
+      "This is question number 8. Please answer the question being asked of you by selecting one of the four options",
     answerChoices: [
       "This is the answer pertaining to Gryffindor",
       "This is the answer pertaining to Slytherin",
@@ -97,7 +97,7 @@ const questionsArray = [
   {
     questionNumber: 9,
     questionText:
-      "This is question number 9. Please answer the question being asked of you by selection one of the four options",
+      "This is question number 9. Please answer the question being asked of you by selecting one of the four options",
     answerChoices: [
       "This is the answer pertaining to Gryffindor",
       "This is the answer pertaining to Slytherin",
@@ -108,7 +108,7 @@ const questionsArray = [
   {
     questionNumber: 10,
     questionText:
-      "This is question number 10. Please answer the question being asked of you by selection one of the four options",
+      "This is question number 10. Please answer the question being asked of you by selecting one of the four options",
     answerChoices: [
       "This is the answer pertaining to Gryffindor",
       "This is the answer pertaining to Slytherin",
@@ -119,7 +119,7 @@ const questionsArray = [
   {
     questionNumber: 11,
     questionText:
-      "This is question number 11. Please answer the question being asked of you by selection one of the four options",
+      "This is question number 11. Please answer the question being asked of you by selecting one of the four options",
     answerChoices: [
       "This is the answer pertaining to Gryffindor",
       "This is the answer pertaining to Slytherin",
@@ -130,7 +130,7 @@ const questionsArray = [
   {
     questionNumber: 12,
     questionText:
-      "This is question number 12. Please answer the question being asked of you by selection one of the four options",
+      "This is question number 12. Please answer the question being asked of you by selecting one of the four options",
     answerChoices: [
       "This is the answer pertaining to Gryffindor",
       "This is the answer pertaining to Slytherin",
@@ -141,7 +141,7 @@ const questionsArray = [
   {
     questionNumber: 13,
     questionText:
-      "This is question number 13. Please answer the question being asked of you by selection one of the four options",
+      "This is question number 13. Please answer the question being asked of you by selecting one of the four options",
     answerChoices: [
       "This is the answer pertaining to Gryffindor",
       "This is the answer pertaining to Slytherin",
@@ -152,7 +152,7 @@ const questionsArray = [
   {
     questionNumber: 14,
     questionText:
-      "This is question number 14. Please answer the question being asked of you by selection one of the four options",
+      "This is question number 14. Please answer the question being asked of you by selecting one of the four options",
     answerChoices: [
       "This is the answer pertaining to Gryffindor",
       "This is the answer pertaining to Slytherin",
@@ -163,7 +163,7 @@ const questionsArray = [
   {
     questionNumber: 15,
     questionText:
-      "This is question number 15. Please answer the question being asked of you by selection one of the four options",
+      "This is question number 15. Please answer the question being asked of you by selecting one of the four options",
     answerChoices: [
       "This is the answer pertaining to Gryffindor",
       "This is the answer pertaining to Slytherin",
@@ -203,6 +203,19 @@ export default function App() {
 
   function handleAnswerSelection() {
     setQuestion(question + 1);
+  }
+
+  function shuffleArray(arr) {
+    const shuffledArray=[];
+    const length = arr.length;
+    for (let i=0; i<length; i++){
+      let randomIndex = Math.floor(Math.random()*length)
+      while(randomIndex in shuffledArray){
+        randomIndex=Math.floor(Math.random()*length);
+      }
+      shuffledArray[randomIndex]=arr[i];
+    }
+    return shuffledArray;
   }
 
   let pageContent;
@@ -246,14 +259,26 @@ export default function App() {
   } else if (question >= 1 && question <= 15) {
     pageContent = (
       <div className="answer-choices">
-        <AnswerChoice onAnswerClick={handleAnswerSelection} />
-        <AnswerChoice onAnswerClick={handleAnswerSelection} />
-        <AnswerChoice onAnswerClick={handleAnswerSelection} />
-        <AnswerChoice onAnswerClick={handleAnswerSelection} />
+        <AnswerChoice
+          onAnswerClick={handleAnswerSelection}
+          textContent={questionsArray[question - 1].answerChoices[0]}
+        />
+        <AnswerChoice
+          onAnswerClick={handleAnswerSelection}
+          textContent={questionsArray[question - 1].answerChoices[1]}
+        />
+        <AnswerChoice
+          onAnswerClick={handleAnswerSelection}
+          textContent={questionsArray[question - 1].answerChoices[2]}
+        />
+        <AnswerChoice
+          onAnswerClick={handleAnswerSelection}
+          textContent={questionsArray[question - 1].answerChoices[3]}
+        />
         <img src="/parchment.png" className="parchment"></img>
         <h1 className="question-heading">Question {question}</h1>
         <p className="question-text">
-          Here is an example of a question. What is your favourite colour?
+          {questionsArray[question - 1].questionText}
         </p>
         <FontAwesomeIcon
           icon={faBackward}
