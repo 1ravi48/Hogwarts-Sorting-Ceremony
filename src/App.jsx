@@ -183,6 +183,7 @@ const scoresArray = [
 export default function App() {
   const [isHatHover, setIsHatHover] = useState(false);
   const [question, setQuestion] = useState(0);
+  const [shuffledAnswers, setShuffledAnswers] = useState([]);
 
   function handleHatHover() {
     setIsHatHover(true);
@@ -194,28 +195,31 @@ export default function App() {
 
   function handleHatClick() {
     setQuestion(question + 1);
+    setShuffledAnswers(shuffleArray(questionsArray[0].answerChoices));
   }
 
   function handleBackClick() {
     setQuestion(question - 1);
     setIsHatHover(false);
+    setShuffledAnswers(
+      shuffleArray(questionsArray[question - 1].answerChoices)
+    );
   }
 
   function handleAnswerSelection() {
     setQuestion(question + 1);
+    setShuffledAnswers(
+      shuffleArray(questionsArray[question - 1].answerChoices)
+    );
   }
 
   function shuffleArray(arr) {
-    const shuffledArray=[];
-    const length = arr.length;
-    for (let i=0; i<length; i++){
-      let randomIndex = Math.floor(Math.random()*length)
-      while(randomIndex in shuffledArray){
-        randomIndex=Math.floor(Math.random()*length);
-      }
-      shuffledArray[randomIndex]=arr[i];
+    const arrCopy = [...arr]; // make copy of arr and assign to arrCopy
+    for (let i = arrCopy.length - 1; i > 0; i--) {
+      const randomIndex = Math.floor(Math.random() * (i + 1)); // produces a random integer between 0-->i inclusive
+      [arrCopy[i], arrCopy[randomIndex]] = [arrCopy[randomIndex], arrCopy[i]]; // swaps item at index position i with item is randomly generated index
     }
-    return shuffledArray;
+    return arrCopy;
   }
 
   let pageContent;
@@ -259,22 +263,12 @@ export default function App() {
   } else if (question >= 1 && question <= 15) {
     pageContent = (
       <div className="answer-choices">
-        <AnswerChoice
-          onAnswerClick={handleAnswerSelection}
-          textContent={questionsArray[question - 1].answerChoices[0]}
-        />
-        <AnswerChoice
-          onAnswerClick={handleAnswerSelection}
-          textContent={questionsArray[question - 1].answerChoices[1]}
-        />
-        <AnswerChoice
-          onAnswerClick={handleAnswerSelection}
-          textContent={questionsArray[question - 1].answerChoices[2]}
-        />
-        <AnswerChoice
-          onAnswerClick={handleAnswerSelection}
-          textContent={questionsArray[question - 1].answerChoices[3]}
-        />
+        {shuffledAnswers.map((answer) => (
+          <AnswerChoice
+            onAnswerClick={handleAnswerSelection}
+            textContent={answer}
+          />
+        ))}
         <img src="/parchment.png" className="parchment"></img>
         <h1 className="question-heading">Question {question}</h1>
         <p className="question-text">
