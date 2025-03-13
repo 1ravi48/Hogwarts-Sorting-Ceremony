@@ -5,6 +5,181 @@ import AnswerChoice from "./components/AnswerChoice/AnswerChoice";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBackward } from "@fortawesome/free-solid-svg-icons";
 
+const questionsArray = [
+  {
+    questionNumber: 1,
+    questionText:
+      "This is question number 1. Please answer the question being asked of you by selection one of the four options",
+    answerChoices: [
+      "This is the answer pertaining to Gryffindor",
+      "This is the answer pertaining to Slytherin",
+      "This is the answer pertaining to Ravenclaw",
+      "This is the answer pertaining to Hufflepuff",
+    ],
+  },
+  {
+    questionNumber: 2,
+    questionText:
+      "This is question number 2. Please answer the question being asked of you by selection one of the four options",
+    answerChoices: [
+      "This is the answer pertaining to Gryffindor",
+      "This is the answer pertaining to Slytherin",
+      "This is the answer pertaining to Ravenclaw",
+      "This is the answer pertaining to Hufflepuff",
+    ],
+  },
+  {
+    questionNumber: 3,
+    questionText:
+      "This is question number 3. Please answer the question being asked of you by selection one of the four options",
+    answerChoices: [
+      "This is the answer pertaining to Gryffindor",
+      "This is the answer pertaining to Slytherin",
+      "This is the answer pertaining to Ravenclaw",
+      "This is the answer pertaining to Hufflepuff",
+    ],
+  },
+  {
+    questionNumber: 4,
+    questionText:
+      "This is question number 4. Please answer the question being asked of you by selection one of the four options",
+    answerChoices: [
+      "This is the answer pertaining to Gryffindor",
+      "This is the answer pertaining to Slytherin",
+      "This is the answer pertaining to Ravenclaw",
+      "This is the answer pertaining to Hufflepuff",
+    ],
+  },
+  {
+    questionNumber: 5,
+    questionText:
+      "This is question number 5. Please answer the question being asked of you by selection one of the four options",
+    answerChoices: [
+      "This is the answer pertaining to Gryffindor",
+      "This is the answer pertaining to Slytherin",
+      "This is the answer pertaining to Ravenclaw",
+      "This is the answer pertaining to Hufflepuff",
+    ],
+  },
+  {
+    questionNumber: 6,
+    questionText:
+      "This is question number 6. Please answer the question being asked of you by selection one of the four options",
+    answerChoices: [
+      "This is the answer pertaining to Gryffindor",
+      "This is the answer pertaining to Slytherin",
+      "This is the answer pertaining to Ravenclaw",
+      "This is the answer pertaining to Hufflepuff",
+    ],
+  },
+  {
+    questionNumber: 7,
+    questionText:
+      "This is question number 7. Please answer the question being asked of you by selection one of the four options",
+    answerChoices: [
+      "This is the answer pertaining to Gryffindor",
+      "This is the answer pertaining to Slytherin",
+      "This is the answer pertaining to Ravenclaw",
+      "This is the answer pertaining to Hufflepuff",
+    ],
+  },
+  {
+    questionNumber: 8,
+    questionText:
+      "This is question number 8. Please answer the question being asked of you by selection one of the four options",
+    answerChoices: [
+      "This is the answer pertaining to Gryffindor",
+      "This is the answer pertaining to Slytherin",
+      "This is the answer pertaining to Ravenclaw",
+      "This is the answer pertaining to Hufflepuff",
+    ],
+  },
+  {
+    questionNumber: 9,
+    questionText:
+      "This is question number 9. Please answer the question being asked of you by selection one of the four options",
+    answerChoices: [
+      "This is the answer pertaining to Gryffindor",
+      "This is the answer pertaining to Slytherin",
+      "This is the answer pertaining to Ravenclaw",
+      "This is the answer pertaining to Hufflepuff",
+    ],
+  },
+  {
+    questionNumber: 10,
+    questionText:
+      "This is question number 10. Please answer the question being asked of you by selection one of the four options",
+    answerChoices: [
+      "This is the answer pertaining to Gryffindor",
+      "This is the answer pertaining to Slytherin",
+      "This is the answer pertaining to Ravenclaw",
+      "This is the answer pertaining to Hufflepuff",
+    ],
+  },
+  {
+    questionNumber: 11,
+    questionText:
+      "This is question number 11. Please answer the question being asked of you by selection one of the four options",
+    answerChoices: [
+      "This is the answer pertaining to Gryffindor",
+      "This is the answer pertaining to Slytherin",
+      "This is the answer pertaining to Ravenclaw",
+      "This is the answer pertaining to Hufflepuff",
+    ],
+  },
+  {
+    questionNumber: 12,
+    questionText:
+      "This is question number 12. Please answer the question being asked of you by selection one of the four options",
+    answerChoices: [
+      "This is the answer pertaining to Gryffindor",
+      "This is the answer pertaining to Slytherin",
+      "This is the answer pertaining to Ravenclaw",
+      "This is the answer pertaining to Hufflepuff",
+    ],
+  },
+  {
+    questionNumber: 13,
+    questionText:
+      "This is question number 13. Please answer the question being asked of you by selection one of the four options",
+    answerChoices: [
+      "This is the answer pertaining to Gryffindor",
+      "This is the answer pertaining to Slytherin",
+      "This is the answer pertaining to Ravenclaw",
+      "This is the answer pertaining to Hufflepuff",
+    ],
+  },
+  {
+    questionNumber: 14,
+    questionText:
+      "This is question number 14. Please answer the question being asked of you by selection one of the four options",
+    answerChoices: [
+      "This is the answer pertaining to Gryffindor",
+      "This is the answer pertaining to Slytherin",
+      "This is the answer pertaining to Ravenclaw",
+      "This is the answer pertaining to Hufflepuff",
+    ],
+  },
+  {
+    questionNumber: 15,
+    questionText:
+      "This is question number 15. Please answer the question being asked of you by selection one of the four options",
+    answerChoices: [
+      "This is the answer pertaining to Gryffindor",
+      "This is the answer pertaining to Slytherin",
+      "This is the answer pertaining to Ravenclaw",
+      "This is the answer pertaining to Hufflepuff",
+    ],
+  },
+];
+
+const scoresArray = [
+  { house: "gryffindor", score: 0 },
+  { house: "slytherin", score: 0 },
+  { house: "ravenclaw", score: 0 },
+  { house: "hufflepuff", score: 0 },
+];
+
 export default function App() {
   const [isHatHover, setIsHatHover] = useState(false);
   const [question, setQuestion] = useState(0);
@@ -68,7 +243,7 @@ export default function App() {
         </p>
       </div>
     );
-  } else if (question >= 1 && question <= 10) {
+  } else if (question >= 1 && question <= 15) {
     pageContent = (
       <div className="answer-choices">
         <AnswerChoice onAnswerClick={handleAnswerSelection} />
