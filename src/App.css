@@ -115,7 +115,7 @@
   cursor: pointer;
 }
 
-.backward-icon-enlarged {
+.backward-icon:hover {
   position: absolute;
   color: #262626;
   left: 50%;

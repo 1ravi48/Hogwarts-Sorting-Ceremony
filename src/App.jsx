@@ -8,7 +8,6 @@ import { faBackward } from "@fortawesome/free-solid-svg-icons";
 export default function App() {
   const [isHatHover, setIsHatHover] = useState(false);
   const [question, setQuestion] = useState(0);
-  const [isBackHover, setIsBackHover] = useState(false);
 
   function handleHatHover() {
     setIsHatHover(true);
@@ -20,15 +19,6 @@ export default function App() {
 
   function handleHatClick() {
     setQuestion(question + 1);
-    setIsBackHover(false);
-  }
-
-  function handleBackHover() {
-    setIsBackHover(true);
-  }
-
-  function handleBackLeave() {
-    setIsBackHover(false);
   }
 
   function handleBackClick() {
@@ -91,9 +81,7 @@ export default function App() {
           </p>
           <FontAwesomeIcon
             icon={faBackward}
-            className={isBackHover ? "backward-icon-enlarged" : "backward-icon"}
-            onMouseEnter={handleBackHover}
-            onMouseLeave={handleBackLeave}
+            className="backward-icon"
             onClick={handleBackClick}
           />
         </div>
