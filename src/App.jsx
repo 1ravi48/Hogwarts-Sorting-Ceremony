@@ -175,6 +175,10 @@ const questionsArray = [
 
 const scoresArray = [0, 0, 0, 0];
 
+let scoreTracker = "";
+
+const scoreTrackerHistory = [];
+
 export default function App() {
   const [isHatHover, setIsHatHover] = useState(false);
   const [question, setQuestion] = useState(0);
@@ -194,11 +198,26 @@ export default function App() {
   }
 
   function handleBackClick() {
+    if (scoreTracker === "gyffindor") {
+      scoresArray[0] = scoresArray[0] - 1;
+    } else if (scoreTracker === "slytherin") {
+      scoresArray[1] = scoresArray[1] - 1;
+    } else if (scoreTracker === "ravenclaw") {
+      scoresArray[2] = scoresArray[2] - 1;
+    } else if (scoreTracker === "hufflepuff") {
+      scoresArray[3] = scoresArray[3] - 1;
+    }
+
+    scoreTracker = scoreTrackerHistory.pop();
+
     setQuestion(question - 1);
     setIsHatHover(false);
     setShuffledAnswers(
       shuffleArray(questionsArray[question - 1].answerChoices)
     );
+    console.log(scoreTracker);
+    console.log(scoreTrackerHistory);
+    console.log(scoresArray);
   }
 
   function handleAnswerSelection(event) {
@@ -216,11 +235,27 @@ export default function App() {
     } else {
       scoresArray[3] = scoresArray[3] + 1;
     }
-
+    scoreTrackerHistory.push(scoreTracker);
+    if (answerSelection === questionsArray[question - 1].answerChoices[0]) {
+      scoreTracker = "gryffindor";
+    } else if (
+      answerSelection === questionsArray[question - 1].answerChoices[1]
+    ) {
+      scoreTracker = "slytherin";
+    } else if (
+      answerSelection === questionsArray[question - 1].answerChoices[2]
+    ) {
+      scoreTracker = "ravenclaw";
+    } else {
+      scoreTracker = "hufflepuff";
+    }
     setQuestion(question + 1);
     setShuffledAnswers(
       shuffleArray(questionsArray[question - 1].answerChoices)
     );
+
+    console.log(scoreTracker);
+    console.log(scoreTrackerHistory);
     console.log(scoresArray);
   }
 
