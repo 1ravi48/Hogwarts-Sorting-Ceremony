@@ -1,8 +1,8 @@
 import "./AnswerChoice.css";
 
 export default function AnswerChoice({ onAnswerClick, textContent }) {
-  function handleAnswerClick() {
-    onAnswerClick();
+  function handleAnswerClick(event) {
+    onAnswerClick(event);
   }
 
   return (

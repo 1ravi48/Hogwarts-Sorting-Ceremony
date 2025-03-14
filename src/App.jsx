@@ -11,10 +11,10 @@ const questionsArray = [
     questionText:
       "This is question number 1. Please answer the question being asked of you by selecting one of the four options",
     answerChoices: [
-      "This is the answer pertaining to Gryffindor",
-      "This is the answer pertaining to Slytherin",
-      "This is the answer pertaining to Ravenclaw",
-      "This is the answer pertaining to Hufflepuff",
+      "This is the answer linked to Gryffindor",
+      "This is the answer linked to Slytherin",
+      "This is the answer linked to Ravenclaw",
+      "This is the answer linked to Hufflepuff",
     ],
   },
   {
@@ -22,10 +22,10 @@ const questionsArray = [
     questionText:
       "This is question number 2. Please answer the question being asked of you by selecting one of the four options",
     answerChoices: [
-      "This is the answer pertaining to Gryffindor",
-      "This is the answer pertaining to Slytherin",
-      "This is the answer pertaining to Ravenclaw",
-      "This is the answer pertaining to Hufflepuff",
+      "This is the answer linked to Gryffindor",
+      "This is the answer linked to Slytherin",
+      "This is the answer linked to Ravenclaw",
+      "This is the answer linked to Hufflepuff",
     ],
   },
   {
@@ -33,10 +33,10 @@ const questionsArray = [
     questionText:
       "This is question number 3. Please answer the question being asked of you by selecting one of the four options",
     answerChoices: [
-      "This is the answer pertaining to Gryffindor",
-      "This is the answer pertaining to Slytherin",
-      "This is the answer pertaining to Ravenclaw",
-      "This is the answer pertaining to Hufflepuff",
+      "This is the answer linked to Gryffindor",
+      "This is the answer linked to Slytherin",
+      "This is the answer linked to Ravenclaw",
+      "This is the answer linked to Hufflepuff",
     ],
   },
   {
@@ -44,10 +44,10 @@ const questionsArray = [
     questionText:
       "This is question number 4. Please answer the question being asked of you by selecting one of the four options",
     answerChoices: [
-      "This is the answer pertaining to Gryffindor",
-      "This is the answer pertaining to Slytherin",
-      "This is the answer pertaining to Ravenclaw",
-      "This is the answer pertaining to Hufflepuff",
+      "This is the answer linked to Gryffindor",
+      "This is the answer linked to Slytherin",
+      "This is the answer linked to Ravenclaw",
+      "This is the answer linked to Hufflepuff",
     ],
   },
   {
@@ -55,10 +55,10 @@ const questionsArray = [
     questionText:
       "This is question number 5. Please answer the question being asked of you by selecting one of the four options",
     answerChoices: [
-      "This is the answer pertaining to Gryffindor",
-      "This is the answer pertaining to Slytherin",
-      "This is the answer pertaining to Ravenclaw",
-      "This is the answer pertaining to Hufflepuff",
+      "This is the answer linked to Gryffindor",
+      "This is the answer linked to Slytherin",
+      "This is the answer linked to Ravenclaw",
+      "This is the answer linked to Hufflepuff",
     ],
   },
   {
@@ -66,10 +66,10 @@ const questionsArray = [
     questionText:
       "This is question number 6. Please answer the question being asked of you by selecting one of the four options",
     answerChoices: [
-      "This is the answer pertaining to Gryffindor",
-      "This is the answer pertaining to Slytherin",
-      "This is the answer pertaining to Ravenclaw",
-      "This is the answer pertaining to Hufflepuff",
+      "This is the answer linked to Gryffindor",
+      "This is the answer linked to Slytherin",
+      "This is the answer linked to Ravenclaw",
+      "This is the answer linked to Hufflepuff",
     ],
   },
   {
@@ -77,10 +77,10 @@ const questionsArray = [
     questionText:
       "This is question number 7. Please answer the question being asked of you by selecting one of the four options",
     answerChoices: [
-      "This is the answer pertaining to Gryffindor",
-      "This is the answer pertaining to Slytherin",
-      "This is the answer pertaining to Ravenclaw",
-      "This is the answer pertaining to Hufflepuff",
+      "This is the answer linked to Gryffindor",
+      "This is the answer linked to Slytherin",
+      "This is the answer linked to Ravenclaw",
+      "This is the answer linked to Hufflepuff",
     ],
   },
   {
@@ -88,10 +88,10 @@ const questionsArray = [
     questionText:
       "This is question number 8. Please answer the question being asked of you by selecting one of the four options",
     answerChoices: [
-      "This is the answer pertaining to Gryffindor",
-      "This is the answer pertaining to Slytherin",
-      "This is the answer pertaining to Ravenclaw",
-      "This is the answer pertaining to Hufflepuff",
+      "This is the answer linked to Gryffindor",
+      "This is the answer linked to Slytherin",
+      "This is the answer linked to Ravenclaw",
+      "This is the answer linked to Hufflepuff",
     ],
   },
   {
@@ -99,10 +99,10 @@ const questionsArray = [
     questionText:
       "This is question number 9. Please answer the question being asked of you by selecting one of the four options",
     answerChoices: [
-      "This is the answer pertaining to Gryffindor",
-      "This is the answer pertaining to Slytherin",
-      "This is the answer pertaining to Ravenclaw",
-      "This is the answer pertaining to Hufflepuff",
+      "This is the answer linked to Gryffindor",
+      "This is the answer linked to Slytherin",
+      "This is the answer linked to Ravenclaw",
+      "This is the answer linked to Hufflepuff",
     ],
   },
   {
@@ -110,10 +110,10 @@ const questionsArray = [
     questionText:
       "This is question number 10. Please answer the question being asked of you by selecting one of the four options",
     answerChoices: [
-      "This is the answer pertaining to Gryffindor",
-      "This is the answer pertaining to Slytherin",
-      "This is the answer pertaining to Ravenclaw",
-      "This is the answer pertaining to Hufflepuff",
+      "This is the answer linked to Gryffindor",
+      "This is the answer linked to Slytherin",
+      "This is the answer linked to Ravenclaw",
+      "This is the answer linked to Hufflepuff",
     ],
   },
   {
@@ -121,10 +121,10 @@ const questionsArray = [
     questionText:
       "This is question number 11. Please answer the question being asked of you by selecting one of the four options",
     answerChoices: [
-      "This is the answer pertaining to Gryffindor",
-      "This is the answer pertaining to Slytherin",
-      "This is the answer pertaining to Ravenclaw",
-      "This is the answer pertaining to Hufflepuff",
+      "This is the answer linked to Gryffindor",
+      "This is the answer linked to Slytherin",
+      "This is the answer linked to Ravenclaw",
+      "This is the answer linked to Hufflepuff",
     ],
   },
   {
@@ -132,10 +132,10 @@ const questionsArray = [
     questionText:
       "This is question number 12. Please answer the question being asked of you by selecting one of the four options",
     answerChoices: [
-      "This is the answer pertaining to Gryffindor",
-      "This is the answer pertaining to Slytherin",
-      "This is the answer pertaining to Ravenclaw",
-      "This is the answer pertaining to Hufflepuff",
+      "This is the answer linked to Gryffindor",
+      "This is the answer linked to Slytherin",
+      "This is the answer linked to Ravenclaw",
+      "This is the answer linked to Hufflepuff",
     ],
   },
   {
@@ -143,10 +143,10 @@ const questionsArray = [
     questionText:
       "This is question number 13. Please answer the question being asked of you by selecting one of the four options",
     answerChoices: [
-      "This is the answer pertaining to Gryffindor",
-      "This is the answer pertaining to Slytherin",
-      "This is the answer pertaining to Ravenclaw",
-      "This is the answer pertaining to Hufflepuff",
+      "This is the answer linked to Gryffindor",
+      "This is the answer linked to Slytherin",
+      "This is the answer linked to Ravenclaw",
+      "This is the answer linked to Hufflepuff",
     ],
   },
   {
@@ -154,10 +154,10 @@ const questionsArray = [
     questionText:
       "This is question number 14. Please answer the question being asked of you by selecting one of the four options",
     answerChoices: [
-      "This is the answer pertaining to Gryffindor",
-      "This is the answer pertaining to Slytherin",
-      "This is the answer pertaining to Ravenclaw",
-      "This is the answer pertaining to Hufflepuff",
+      "This is the answer linked to Gryffindor",
+      "This is the answer linked to Slytherin",
+      "This is the answer linked to Ravenclaw",
+      "This is the answer linked to Hufflepuff",
     ],
   },
   {
@@ -165,20 +165,15 @@ const questionsArray = [
     questionText:
       "This is question number 15. Please answer the question being asked of you by selecting one of the four options",
     answerChoices: [
-      "This is the answer pertaining to Gryffindor",
-      "This is the answer pertaining to Slytherin",
-      "This is the answer pertaining to Ravenclaw",
-      "This is the answer pertaining to Hufflepuff",
+      "This is the answer linked to Gryffindor",
+      "This is the answer linked to Slytherin",
+      "This is the answer linked to Ravenclaw",
+      "This is the answer linked to Hufflepuff",
     ],
   },
 ];
 
-const scoresArray = [
-  { house: "gryffindor", score: 0 },
-  { house: "slytherin", score: 0 },
-  { house: "ravenclaw", score: 0 },
-  { house: "hufflepuff", score: 0 },
-];
+const scoresArray = [0, 0, 0, 0];
 
 export default function App() {
   const [isHatHover, setIsHatHover] = useState(false);
@@ -206,11 +201,27 @@ export default function App() {
     );
   }
 
-  function handleAnswerSelection() {
+  function handleAnswerSelection(event) {
+    const answerSelection = event.target.textContent;
+    if (answerSelection === questionsArray[question - 1].answerChoices[0]) {
+      scoresArray[0] = scoresArray[0] + 1;
+    } else if (
+      answerSelection === questionsArray[question - 1].answerChoices[1]
+    ) {
+      scoresArray[1] = scoresArray[1] + 1;
+    } else if (
+      answerSelection === questionsArray[question - 1].answerChoices[2]
+    ) {
+      scoresArray[2] = scoresArray[2] + 1;
+    } else {
+      scoresArray[3] = scoresArray[3] + 1;
+    }
+
     setQuestion(question + 1);
     setShuffledAnswers(
       shuffleArray(questionsArray[question - 1].answerChoices)
     );
+    console.log(scoresArray);
   }
 
   function shuffleArray(arr) {
