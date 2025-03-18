@@ -1,0 +1,6 @@
+Reflections:
+1 - The main App component renders different content based on certain conditions, and I have written all of this content into the App component. Really, I should have written the different bits of content as separate components, making the App component a bit more readable. Challenges with this would be ensuring state is properly lifted up and passed down as props to each of the child components within App.
+
+2 - I should have thought about responsive styling from the get-go rather than doing this at the end. Although it might have slowed the process down, it makes the responsive styling much easier to do.
+
+3 - My App component alters global variables outside of it, making the component an "impure" function as it changes variables that were declared before it was called. These global variables should really have been state variables within App.
