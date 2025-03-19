@@ -183,6 +183,7 @@ export default function App() {
   const [isHatHover, setIsHatHover] = useState(false);
   const [question, setQuestion] = useState(0);
   const [shuffledAnswers, setShuffledAnswers] = useState([]);
+  const [showResult, setShowResult] = useState(false);
 
   function handleHatHover() {
     setIsHatHover(true);
@@ -259,6 +260,10 @@ export default function App() {
     console.log(scoresArray);
   }
 
+  function handleResultClick() {
+    setShowResult(true);
+  }
+
   function shuffleArray(arr) {
     const arrCopy = [...arr]; // make copy of arr and assign to arrCopy
     for (let i = arrCopy.length - 1; i > 0; i--) {
@@ -327,8 +332,37 @@ export default function App() {
         />
       </div>
     );
-  } else {
-    pageContent = <p>You have finished the quiz</p>;
+  } else if (question === 16 && showResult === false) {
+    pageContent = (
+      <div className="four-colours">
+        <HouseColourBackground
+          backgroundColor="#95103b"
+          imagePath="../public/gryffindor-logo.png"
+        />
+        <HouseColourBackground
+          backgroundColor="#1d7452"
+          imagePath="../public/slytherin-logo.png"
+        />
+        <HouseColourBackground
+          backgroundColor="#97b6d3"
+          imagePath="../public/ravenclaw-logo.png"
+        />
+        <HouseColourBackground
+          backgroundColor="#ffebb9"
+          imagePath="../public/hufflepuff-logo.png"
+        />
+        <p className="click-for-result" onClick={handleResultClick}>
+          Click here to join your house!
+        </p>
+        <FontAwesomeIcon
+          icon={faBackward}
+          className="backward-icon-end"
+          onClick={handleBackClick}
+        />
+      </div>
+    );
+  } else if (question === 16 && showResult === true) {
+    pageContent = <p>Here's your result</p>;
   }
 
   return <div className="page">{pageContent}</div>;

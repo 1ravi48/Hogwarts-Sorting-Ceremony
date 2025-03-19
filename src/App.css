@@ -125,3 +125,57 @@
   height: auto;
   cursor: pointer;
 }
+
+.backward-icon-end {
+  position: absolute;
+  color: #262626;
+  left: 2%;
+  top: 5%;
+  width: 2.5%;
+  height: auto;
+  cursor: pointer;
+}
+
+.backward-icon-end:hover {
+  position: absolute;
+  color: #262626;
+  left: 2%;
+  top: 5%;
+  width: 3.5%;
+  height: auto;
+  cursor: pointer;
+}
+
+.click-for-result {
+  position: absolute;
+  left: 50%;
+  top: 42.5%;
+  transform: translate(-50%);
+  background-color: #f8f4e1;
+  font-size: 150%;
+  font-weight: bolder;
+  color: #262626;
+  padding: 1%;
+  font-family: "Courier New", Courier, monospace;
+  border: solid #262626 10px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.click-for-result:hover {
+  position: absolute;
+  left: 50%;
+  top: 42.5%;
+  transform: translate(-50%);
+  background-color: #d07d3c;
+  font-size: 150%;
+  font-weight: bolder;
+  color: #262626;
+  padding: 1%;
+  font-family: "Courier New", Courier, monospace;
+  border: solid #262626 10px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
