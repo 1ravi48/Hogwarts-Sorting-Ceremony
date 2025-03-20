@@ -184,6 +184,7 @@ export default function App() {
   const [question, setQuestion] = useState(0);
   const [shuffledAnswers, setShuffledAnswers] = useState([]);
   const [showResult, setShowResult] = useState(false);
+  const [resultContent, setResultContent] = useState(<p></p>);
 
   function handleHatHover() {
     setIsHatHover(true);
@@ -199,7 +200,7 @@ export default function App() {
   }
 
   function handleBackClick() {
-    if (scoreTracker === "gyffindor") {
+    if (scoreTracker === "gryffindor") {
       scoresArray[0] = scoresArray[0] - 1;
     } else if (scoreTracker === "slytherin") {
       scoresArray[1] = scoresArray[1] - 1;
@@ -210,11 +211,11 @@ export default function App() {
     }
 
     scoreTracker = scoreTrackerHistory.pop();
-
-    setQuestion(question - 1);
+    const prevQuestion = question - 1;
+    setQuestion(prevQuestion);
     setIsHatHover(false);
     setShuffledAnswers(
-      shuffleArray(questionsArray[question - 1].answerChoices)
+      shuffleArray(questionsArray[prevQuestion - 1].answerChoices)
     );
     console.log(scoreTracker);
     console.log(scoreTrackerHistory);
@@ -261,6 +262,21 @@ export default function App() {
   }
 
   function handleResultClick() {
+    if (isOnlyHighestScore()) {
+      if (isOnlySecondHighestScore()) {
+        setResultContent(
+          <p>You belong to one house, but with traits of another house too</p>
+        );
+      } else {
+        setResultContent(<p>You belong to one house only</p>);
+      }
+    } else {
+      if (occurrencesOfHighestScore() === 2) {
+        setResultContent(<p>You are a hatstall between two houses</p>);
+      } else if (occurrencesOfHighestScore() === 3) {
+        setResultContent(<p>You are a hatstall between THREE houses</p>);
+      }
+    }
     setShowResult(true);
   }
 
@@ -271,6 +287,58 @@ export default function App() {
       [arrCopy[i], arrCopy[randomIndex]] = [arrCopy[randomIndex], arrCopy[i]]; // swaps item at index position i with item is randomly generated index
     }
     return arrCopy;
+  }
+
+  function highestScore() {
+    const largestValue = Math.max(...scoresArray);
+    console.log(largestValue);
+    return largestValue;
+  }
+
+  function isOnlyHighestScore() {
+    const largestValue = highestScore();
+    const largestValueArray = scoresArray.filter(
+      (value) => value === largestValue
+    );
+    if (largestValueArray.length === 1) {
+      console.log(true);
+      return true;
+    } else {
+      console.log(false);
+      return false;
+    }
+  }
+
+  function secondHighestScore() {
+    const largestValue = highestScore();
+    const scoresArrayWithoutHighest = scoresArray.filter(
+      (value) => value !== largestValue
+    );
+    const secondLargestValue = Math.max(...scoresArrayWithoutHighest);
+    console.log(secondLargestValue);
+    return secondLargestValue;
+  }
+
+  function isOnlySecondHighestScore() {
+    const secondLargestValue = secondHighestScore();
+    const secondLargestValueArray = scoresArray.filter(
+      (value) => value === secondLargestValue
+    );
+    if (secondLargestValueArray.length === 1) {
+      console.log(true);
+      return true;
+    } else {
+      console.log(false);
+      return false;
+    }
+  }
+
+  function occurrencesOfHighestScore() {
+    const largestValue = highestScore();
+    const largestValueArray = scoresArray.filter(
+      (value) => value === largestValue
+    );
+    return largestValueArray.length;
   }
 
   let pageContent;
@@ -362,7 +430,7 @@ export default function App() {
       </div>
     );
   } else if (question === 16 && showResult === true) {
-    pageContent = <p>Here's your result</p>;
+    pageContent = resultContent;
   }
 
   return <div className="page">{pageContent}</div>;

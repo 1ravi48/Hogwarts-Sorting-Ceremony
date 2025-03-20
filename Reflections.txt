@@ -4,3 +4,7 @@ Reflections:
 2 - I should have thought about responsive styling from the get-go rather than doing this at the end. Although it might have slowed the process down, it makes the responsive styling much easier to do.
 
 3 - My App component alters global variables outside of it, making the component an "impure" function as it changes variables that were declared before it was called. These global variables should really have been state variables within App.
+
+4 - Whenever React re-renders a component, any regular variables that have been updated get reset to their original declared value - React does not remember the updated values assigned to this variable. Any variables that I want React to track MUST be stored as state.
+
+5 - Whenever a state variable is updated inside a function, the state variable is not immediately updated inside the function execution - it has been scheduled to updated once the function execution finishes. This means that if this state variable is used later during the same function execution, its value here will still be its current value, not the updated value you would expect it to be - the state variable DOES NOT immediately update until the function execution has finished. This is due to the async nature of React's state updates.
