@@ -179,6 +179,8 @@ let scoreTracker = "";
 
 const scoreTrackerHistory = [];
 
+const fourHouses = ["Gryffindor", "Slytherin", "Ravenclaw", "Hufflepuff"];
+
 export default function App() {
   const [isHatHover, setIsHatHover] = useState(false);
   const [question, setQuestion] = useState(0);
@@ -214,9 +216,12 @@ export default function App() {
     const prevQuestion = question - 1;
     setQuestion(prevQuestion);
     setIsHatHover(false);
-    setShuffledAnswers(
-      shuffleArray(questionsArray[prevQuestion - 1].answerChoices)
-    );
+    if (prevQuestion > 0) {
+      setShuffledAnswers(
+        shuffleArray(questionsArray[prevQuestion - 1].answerChoices)
+      );
+    }
+
     console.log(scoreTracker);
     console.log(scoreTrackerHistory);
     console.log(scoresArray);
@@ -265,16 +270,54 @@ export default function App() {
     if (isOnlyHighestScore()) {
       if (isOnlySecondHighestScore()) {
         setResultContent(
-          <p>You belong to one house, but with traits of another house too</p>
+          <div className="results-page">
+            <img
+              src="../public/hogwarts-sorting-hat.png"
+              className="sorting-hat-result"
+            />
+            <p className="result-text">
+              You belong {winningHouse()}, but with traits of {secondHouse()}{" "}
+              too.
+            </p>
+          </div>
         );
       } else {
-        setResultContent(<p>You belong to one house only</p>);
+        setResultContent(
+          <div className="results-page">
+            <img
+              src="../public/hogwarts-sorting-hat.png"
+              className="sorting-hat-result"
+            />
+            <p className="result-text">You belong to {winningHouse()} only.</p>
+          </div>
+        );
       }
     } else {
       if (occurrencesOfHighestScore() === 2) {
-        setResultContent(<p>You are a hatstall between two houses</p>);
+        setResultContent(
+          <div className="results-page">
+            <img
+              src="../public/hogwarts-sorting-hat.png"
+              className="sorting-hat-result"
+            />
+            <p className="result-text">
+              {" "}
+              You are a hatstall between {winningHouse()}.
+            </p>
+          </div>
+        );
       } else if (occurrencesOfHighestScore() === 3) {
-        setResultContent(<p>You are a hatstall between THREE houses</p>);
+        setResultContent(
+          <div className="results-page">
+            <img
+              src="../public/hogwarts-sorting-hat.png"
+              className="sorting-hat-result"
+            />
+            <p className="result-text">
+              You are a hatstall between {winningHouse()}.
+            </p>
+          </div>
+        );
       }
     }
     setShowResult(true);
@@ -339,6 +382,45 @@ export default function App() {
       (value) => value === largestValue
     );
     return largestValueArray.length;
+  }
+
+  function winningHouse() {
+    if (isOnlyHighestScore()) {
+      if (scoresArray.indexOf(highestScore()) === 0) {
+        return "Gryffindor";
+      } else if (scoresArray.indexOf(highestScore()) === 1) {
+        return "Slytherin";
+      } else if (scoresArray.indexOf(highestScore()) === 2) {
+        return "Ravenclaw";
+      } else {
+        return "Hufflepuff";
+      }
+    } else {
+      if (occurrencesOfHighestScore() === 2) {
+        const indArr = [];
+        let i = -1;
+        while ((i = scoresArray.indexOf(highestScore(), i + 1)) !== -1) {
+          indArr.push(i);
+        }
+        return `${fourHouses[indArr[0]]} and ${fourHouses[indArr[1]]}`;
+      } else if (occurrencesOfHighestScore() === 3) {
+        const indArr = [];
+        let i = -1;
+        while ((i = scoresArray.indexOf(highestScore(), i + 1)) !== -1) {
+          indArr.push(i);
+        }
+        return `${fourHouses[indArr[0]]}, ${fourHouses[indArr[1]]} and ${
+          fourHouses[indArr[2]]
+        }`;
+      }
+    }
+  }
+
+  function secondHouse() {
+    if (isOnlySecondHighestScore()) {
+      const index = scoresArray.indexOf(secondHighestScore());
+      return fourHouses[index];
+    }
   }
 
   let pageContent;

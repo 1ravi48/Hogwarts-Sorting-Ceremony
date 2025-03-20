@@ -1,7 +1,7 @@
 .four-colours {
   position: relative;
   width: 1100px;
-  height: 100vh;
+  height: 100%;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -14,6 +14,7 @@
   height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #262626;
 }
 
@@ -21,7 +22,7 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 30%;
+  width: 23%;
   height: auto;
   transform: translate(
     -50%,
@@ -33,7 +34,7 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 35%;
+  width: 28%;
   height: auto;
   transform: translate(
     -50%,
@@ -178,4 +179,26 @@
   border-radius: 10px;
   text-align: center;
   cursor: pointer;
+}
+
+.results-page {
+  width: 1100px;
+  background-color: #f8f4e1;
+  height: 95%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 18px;
+}
+
+.sorting-hat-result {
+  width: 35%;
+  height: auto;
+}
+
+.result-text {
+  width: 35%;
+  border: solid;
+  text-align: center;
+  color: #262626;
 }
