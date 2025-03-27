@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "caveathandwritten";
+  src: url("/fonts/caveat-variable-fontweight400-700.ttf") format("truetype");
+  font-weight: 400 700;
+}
+
 .four-colours {
   position: relative;
   width: 1100px;
@@ -89,18 +95,22 @@
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  top: 30.5%;
+  top: 31.5%;
   color: #262626;
   font-family: "Courier New", Courier, monospace;
   text-align: center;
+  font-size: 250%;
 }
 
 .question-text {
+  font-family: "caveathandwritten";
+  font-size: 122%;
+  font-weight: 500;
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  top: 40%;
-  width: 28%;
+  top: 38%;
+  width: 32%;
   color: #262626;
   text-align: center;
 }
@@ -197,8 +207,31 @@
 }
 
 .result-text {
-  width: 35%;
-  border: solid;
+  font-family: "caveathandwritten";
   text-align: center;
   color: #262626;
+  font-size: 300%;
+  width: 120%;
+  margin: 0;
+}
+
+.house-logo-result {
+  width: 32%;
+  height: auto;
+}
+
+.result-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 35%;
+  height: 80%;
+  padding: 0;
+}
+
+.logos-div {
+  width: 150%;
+  display: flex;
+  justify-content: space-evenly;
 }

@@ -275,10 +275,18 @@ export default function App() {
               src="../public/hogwarts-sorting-hat.png"
               className="sorting-hat-result"
             />
-            <p className="result-text">
-              You belong {winningHouse()}, but with traits of {secondHouse()}{" "}
-              too.
-            </p>
+            <div className="result-div">
+              <p className="result-text">
+                You have been sorted into {winningHouse()}, but also hold some
+                traits of {secondHouse()}!
+              </p>
+              <div className="logos-div">
+                <img
+                  src={`/${winningHouse().toLowerCase()}-logo.png`}
+                  className="house-logo-result"
+                />
+              </div>
+            </div>
           </div>
         );
       } else {
@@ -288,7 +296,17 @@ export default function App() {
               src="../public/hogwarts-sorting-hat.png"
               className="sorting-hat-result"
             />
-            <p className="result-text">You belong to {winningHouse()} only.</p>
+            <div className="result-div">
+              <p className="result-text">
+                You have been sorted into {winningHouse()}.
+              </p>
+              <div className="logos-div">
+                <img
+                  src={`/${winningHouse().toLowerCase()}-logo.png`}
+                  className="house-logo-result"
+                />
+              </div>
+            </div>
           </div>
         );
       }
@@ -300,10 +318,20 @@ export default function App() {
               src="../public/hogwarts-sorting-hat.png"
               className="sorting-hat-result"
             />
-            <p className="result-text">
-              {" "}
-              You are a hatstall between {winningHouse()}.
-            </p>
+            <div className="result-div">
+              <p className="result-text">
+                {" "}
+                You are a hatstall between {winningHouse()}.
+              </p>
+              <div className="logos-div">
+                {winningHouseIndArray().map((index) => (
+                  <img
+                    src={`/${fourHouses[index].toLowerCase()}-logo.png`}
+                    className="house-logo-result"
+                  />
+                ))}
+              </div>
+            </div>
           </div>
         );
       } else if (occurrencesOfHighestScore() === 3) {
@@ -313,9 +341,19 @@ export default function App() {
               src="../public/hogwarts-sorting-hat.png"
               className="sorting-hat-result"
             />
-            <p className="result-text">
-              You are a hatstall between {winningHouse()}.
-            </p>
+            <div className="result-div">
+              <p className="result-text">
+                You are a hatstall between {winningHouse()}!!
+              </p>
+              <div className="logos-div">
+                {winningHouseIndArray().map((index) => (
+                  <img
+                    src={`/${fourHouses[index].toLowerCase()}-logo.png`}
+                    className="house-logo-result"
+                  />
+                ))}
+              </div>
+            </div>
           </div>
         );
       }
@@ -409,11 +447,23 @@ export default function App() {
         while ((i = scoresArray.indexOf(highestScore(), i + 1)) !== -1) {
           indArr.push(i);
         }
-        return `${fourHouses[indArr[0]]}, ${fourHouses[indArr[1]]} and ${
-          fourHouses[indArr[2]]
-        }`;
+        return (
+          <>
+            {fourHouses[indArr[0]]}, {fourHouses[indArr[1]]} <u>AND</u>{" "}
+            {fourHouses[indArr[2]]}
+          </>
+        );
       }
     }
+  }
+
+  function winningHouseIndArray() {
+    const indArr = [];
+    let i = -1;
+    while ((i = scoresArray.indexOf(highestScore(), i + 1)) !== -1) {
+      indArr.push(i);
+    }
+    return indArr;
   }
 
   function secondHouse() {
