@@ -10,3 +10,7 @@ Reflections:
 5 - Whenever a state variable is updated inside a function, the state variable is not immediately updated inside the function execution - it has been scheduled to updated once the function execution finishes. This means that if this state variable is used later during the same function execution, its value here will still be its current value, not the updated value you would expect it to be - the state variable DOES NOT immediately update until the function execution has finished. This is due to the async nature of React's state updates.
 
 6 - <p> tags by default always have margins set on them! This can cause you problems when styling with flexbox.
+
+7 - When using media queries for responsive styling, all original styling rules are still applied unless you explicitly override them within the media query rules.
+
+8 - In CSS, using box-sizing: border-box ensures that the padding is included when you set heights and widths to be 100% of their parent container (meaning that when you apply padding, it doesn't then override the parent container and stays within!)

@@ -84,8 +84,9 @@
 .answer-choices {
   position: relative;
   width: 1100px;
-  height: 100vh;
-  padding: 0;
+  height: 100%;
+  padding-left: 2%;
+  padding-right: 2%;
   display: flex;
   flex-wrap: wrap;
   align-content: space-evenly;
@@ -267,6 +268,63 @@
     border-radius: 10px;
     text-align: center;
     width: 45%;
+    cursor: pointer;
+  }
+
+  .answer-choices {
+    position: relative;
+    width: 1100px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    gap: 0;
+    padding: 2%;
+    box-sizing: border-box; /* ensures the padding and border remain within the 100% percentage height that has been set */
+  }
+
+  .parchment {
+    position: absolute;
+    left: 50%;
+    top: 52%;
+    width: 85%;
+    height: auto;
+    transform: translate(-50%, -58%);
+  }
+
+  .question-heading {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 36.5%;
+    color: #262626;
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+    font-size: 200%;
+  }
+
+  .question-text {
+    font-family: "caveathandwritten";
+    font-size: 115%;
+    font-weight: 500;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 41%;
+    width: 63%;
+    color: #262626;
+    text-align: center;
+  }
+
+  .backward-icon {
+    position: absolute;
+    color: #262626;
+    left: 50%;
+    transform: translate(-50%);
+    top: 58.5%;
+    width: 3.5%;
+    height: auto;
     cursor: pointer;
   }
 }
