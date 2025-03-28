@@ -507,7 +507,7 @@ export default function App() {
           onMouseLeave={handleHatLeave}
           onClick={handleHatClick}
         >
-          Let's begin the <br /> sorting ceremony...
+          Let's begin the sorting ceremony...
         </p>
       </div>
     );
