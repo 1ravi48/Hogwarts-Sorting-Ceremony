@@ -36,6 +36,10 @@
     align-items: center;
     justify-content: center;
   }
+
+  .answer-choice-text {
+    font-size: 4vw;
+  }
 }
 
 @media only screen and (600px < width <= 900px) {

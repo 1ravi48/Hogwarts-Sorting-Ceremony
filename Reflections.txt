@@ -14,3 +14,7 @@ Reflections:
 7 - When using media queries for responsive styling, all original styling rules are still applied unless you explicitly override them within the media query rules.
 
 8 - In CSS, using box-sizing: border-box ensures that the padding is included when you set heights and widths to be 100% of their parent container (meaning that when you apply padding, it doesn't then override the parent container and stays within!)
+
+9 - In CSS, the aspect ratio property can be used instead of setting a height. This means that the height will change with the width of the element in order to maintain a certain aspect ratio (especially useful if the width is a responsive width set as a percentage).
+
+10 - Percentages for font sizes are a percentage of the font size of the parent container's font size (assuming it has been set), they are NOT a percentage of the container's width as you have always assumed!

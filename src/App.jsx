@@ -520,6 +520,7 @@ export default function App() {
             textContent={answer}
           />
         ))}
+        <div className="parchment-div">
         <img src="/parchment.png" className="parchment"></img>
         <h1 className="question-heading">Question {question}</h1>
         <p className="question-text">
@@ -530,6 +531,7 @@ export default function App() {
           className="backward-icon"
           onClick={handleBackClick}
         />
+        </div>
       </div>
     );
   } else if (question === 16 && showResult === false) {
