@@ -22,8 +22,16 @@
 .answer-choice-text {
   font-family: "Courier New", Courier, monospace;
   color: #262626;
-  font-size: 150%;
+  font-size: 1.7vw;
   text-align: center;
+  width: 76%;
+  padding: 0;
+}
+
+@media only screen and (min-width: 1130px) {
+  .answer-choice-text {
+    font-size: 120%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
