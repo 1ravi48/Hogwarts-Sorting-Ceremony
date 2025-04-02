@@ -40,6 +40,12 @@
     width: 48.5%;
   }
 
+  .answer-choice-div:hover {
+    height: 38%;
+    width: 48.5%;
+    background-color: #f8f4e1;
+  }
+
   .answer-choice-text {
     font-size: 4vw;
   }
