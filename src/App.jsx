@@ -272,7 +272,7 @@ export default function App() {
         setResultContent(
           <div className="results-page">
             <img
-              src="../public/hogwarts-sorting-hat.png"
+              src="/hogwarts-sorting-hat.png"
               className="sorting-hat-result"
             />
             <div className="result-div">
@@ -293,7 +293,7 @@ export default function App() {
         setResultContent(
           <div className="results-page">
             <img
-              src="../public/hogwarts-sorting-hat.png"
+              src="/hogwarts-sorting-hat.png"
               className="sorting-hat-result"
             />
             <div className="result-div">
@@ -315,7 +315,7 @@ export default function App() {
         setResultContent(
           <div className="results-page">
             <img
-              src="../public/hogwarts-sorting-hat.png"
+              src="/hogwarts-sorting-hat.png"
               className="sorting-hat-result"
             />
             <div className="result-div">
@@ -338,7 +338,7 @@ export default function App() {
         setResultContent(
           <div className="results-page">
             <img
-              src="../public/hogwarts-sorting-hat.png"
+              src="/hogwarts-sorting-hat.png"
               className="sorting-hat-result"
             />
             <div className="result-div">
@@ -480,22 +480,22 @@ export default function App() {
       <div className="four-colours">
         <HouseColourBackground
           backgroundColor="#95103b"
-          imagePath="../public/gryffindor-logo.png"
+          imagePath="/gryffindor-logo.png"
         />
         <HouseColourBackground
           backgroundColor="#1d7452"
-          imagePath="../public/slytherin-logo.png"
+          imagePath="/slytherin-logo.png"
         />
         <HouseColourBackground
           backgroundColor="#97b6d3"
-          imagePath="../public/ravenclaw-logo.png"
+          imagePath="/ravenclaw-logo.png"
         />
         <HouseColourBackground
           backgroundColor="#ffebb9"
-          imagePath="../public/hufflepuff-logo.png"
+          imagePath="/hufflepuff-logo.png"
         />
         <img
-          src="../public/hogwarts-sorting-hat.png"
+          src="/hogwarts-sorting-hat.png"
           className={isHatHover ? "sorting-hat-enlarged" : "sorting-hat"}
           onMouseEnter={handleHatHover}
           onMouseLeave={handleHatLeave}
@@ -539,19 +539,19 @@ export default function App() {
       <div className="four-colours">
         <HouseColourBackground
           backgroundColor="#95103b"
-          imagePath="../public/gryffindor-logo.png"
+          imagePath="/gryffindor-logo.png"
         />
         <HouseColourBackground
           backgroundColor="#1d7452"
-          imagePath="../public/slytherin-logo.png"
+          imagePath="/slytherin-logo.png"
         />
         <HouseColourBackground
           backgroundColor="#97b6d3"
-          imagePath="../public/ravenclaw-logo.png"
+          imagePath="/ravenclaw-logo.png"
         />
         <HouseColourBackground
           backgroundColor="#ffebb9"
-          imagePath="../public/hufflepuff-logo.png"
+          imagePath="/hufflepuff-logo.png"
         />
         <p className="click-for-result" onClick={handleResultClick}>
           Click here to join your house!
