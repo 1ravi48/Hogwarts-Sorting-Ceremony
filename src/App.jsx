@@ -221,10 +221,6 @@ export default function App() {
         shuffleArray(questionsArray[prevQuestion - 1].answerChoices)
       );
     }
-
-    console.log(scoreTracker);
-    console.log(scoreTrackerHistory);
-    console.log(scoresArray);
   }
 
   function handleAnswerSelection(event) {
@@ -260,10 +256,6 @@ export default function App() {
     setShuffledAnswers(
       shuffleArray(questionsArray[question - 1].answerChoices)
     );
-
-    console.log(scoreTracker);
-    console.log(scoreTrackerHistory);
-    console.log(scoresArray);
   }
 
   function handleResultClick() {
@@ -372,7 +364,6 @@ export default function App() {
 
   function highestScore() {
     const largestValue = Math.max(...scoresArray);
-    console.log(largestValue);
     return largestValue;
   }
 
@@ -382,10 +373,8 @@ export default function App() {
       (value) => value === largestValue
     );
     if (largestValueArray.length === 1) {
-      console.log(true);
       return true;
     } else {
-      console.log(false);
       return false;
     }
   }
@@ -396,7 +385,6 @@ export default function App() {
       (value) => value !== largestValue
     );
     const secondLargestValue = Math.max(...scoresArrayWithoutHighest);
-    console.log(secondLargestValue);
     return secondLargestValue;
   }
 
@@ -406,10 +394,8 @@ export default function App() {
       (value) => value === secondLargestValue
     );
     if (secondLargestValueArray.length === 1) {
-      console.log(true);
       return true;
     } else {
-      console.log(false);
       return false;
     }
   }
