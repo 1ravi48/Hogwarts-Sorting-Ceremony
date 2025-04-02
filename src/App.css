@@ -280,15 +280,7 @@
 
 @media only screen and (max-width: 600px) {
   .sorting-hat {
-    position: absolute;
-    left: 50%;
-    top: 50%;
     width: 34%;
-    height: auto;
-    transform: translate(
-      -50%,
-      -58%
-    ); /* moves the element backwards on the x and y axis by 50% of its own width and height respectively - ultimately centering it perfectly*/
   }
 
   .sorting-hat-not-greet {
@@ -311,76 +303,30 @@
   }
 
   .answer-choices {
-    position: relative;
-    width: 1100px;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
     align-content: space-between;
-    justify-content: space-between;
     gap: 0;
     padding: 2%;
     box-sizing: border-box; /* ensures the padding and border remain within the 100% percentage height that has been set */
   }
 
   .parchment-div {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 90%;
-    aspect-ratio: 16 / 10;
-  }
-
-  .parchment {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 100%;
-    height: auto;
-    transform: translate(-50%, -50%);
   }
 
   .question-heading {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    top: 5%;
-    color: #262626;
-    font-family: "Courier New", Courier, monospace;
-    text-align: center;
     font-size: 7vw;
   }
 
   .question-text {
-    font-family: "caveathandwritten";
     font-size: 3.8vw;
-    font-weight: 500;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
     top: 20%;
     width: 77%;
-    color: #262626;
-    text-align: center;
-  }
-
-  .backward-icon {
-    position: absolute;
-    color: #262626;
-    left: 50%;
-    transform: translate(-50%);
-    top: 82%;
-    width: 4%;
-    height: auto;
-    cursor: pointer;
   }
 
   .backward-icon-end {
     left: 5%;
     top: 3.5%;
     width: 5%;
-    height: auto;
   }
 
   .click-for-result {
@@ -388,16 +334,11 @@
     font-size: 4.1vw;
     width: 75%;
     border: solid #262626 7px;
-    border-radius: 10px;
   }
 
   .results-page {
     margin-left: 4%;
     margin-right: 4%;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
   }
 
   .sorting-hat-result {
@@ -407,23 +348,16 @@
   .result-text {
     font-size: 10vw;
     width: 100%;
-    margin: 0;
   }
 
   .result-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: space-around;
     width: 90%;
     height: 70%;
-    padding: 0;
   }
 
   .logos-div {
     width: 100%;
-    display: flex;
-    justify-content: space-evenly;
   }
 }
 
