@@ -226,13 +226,18 @@
   font-family: "caveathandwritten";
   text-align: center;
   color: #262626;
-  font-size: 5.6vw;
+  font-size: 5.2vw;
   width: 120%;
   margin: 0;
 }
 
 .house-logo-result {
   width: 32%;
+  height: auto;
+}
+
+.house-logo-result-single {
+  width: 40%;
   height: auto;
 }
 
@@ -262,7 +267,7 @@
   }
 
   .result-text {
-    font-size: 400%;
+    font-size: 370%;
   }
 
   .sorting-hat-greet {
@@ -314,7 +319,7 @@
   }
 
   .question-heading {
-    font-size: 7vw;
+    font-size: 6.8vw;
   }
 
   .question-text {
@@ -358,6 +363,10 @@
 
   .logos-div {
     width: 100%;
+  }
+
+  .house-logo-result-single {
+    width: 55%;
   }
 }
 

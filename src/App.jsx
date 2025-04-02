@@ -283,7 +283,7 @@ export default function App() {
               <div className="logos-div">
                 <img
                   src={`/${winningHouse().toLowerCase()}-logo.png`}
-                  className="house-logo-result"
+                  className="house-logo-result-single"
                 />
               </div>
             </div>
@@ -303,7 +303,7 @@ export default function App() {
               <div className="logos-div">
                 <img
                   src={`/${winningHouse().toLowerCase()}-logo.png`}
-                  className="house-logo-result"
+                  className="house-logo-result-single"
                 />
               </div>
             </div>
@@ -521,16 +521,16 @@ export default function App() {
           />
         ))}
         <div className="parchment-div">
-        <img src="/parchment.png" className="parchment"></img>
-        <h1 className="question-heading">Question {question}</h1>
-        <p className="question-text">
-          {questionsArray[question - 1].questionText}
-        </p>
-        <FontAwesomeIcon
-          icon={faBackward}
-          className="backward-icon"
-          onClick={handleBackClick}
-        />
+          <img src="/parchment.png" className="parchment"></img>
+          <h1 className="question-heading">Question {question}</h1>
+          <p className="question-text">
+            {questionsArray[question - 1].questionText}
+          </p>
+          <FontAwesomeIcon
+            icon={faBackward}
+            className="backward-icon"
+            onClick={handleBackClick}
+          />
         </div>
       </div>
     );
