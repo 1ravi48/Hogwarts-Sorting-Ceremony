@@ -22,7 +22,7 @@
 .answer-choice-text {
   font-family: "Courier New", Courier, monospace;
   color: #262626;
-  font-size: 1.7vw;
+  font-size: 1.35vw;
   text-align: center;
   width: 76%;
   padding: 0;
@@ -30,7 +30,7 @@
 
 @media only screen and (min-width: 1130px) {
   .answer-choice-text {
-    font-size: 120%;
+    font-size: 95%;
   }
 }
 
