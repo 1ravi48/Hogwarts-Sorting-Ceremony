@@ -22,14 +22,3 @@
     width: 49%;
   }
 }
-
-@media only screen and (600px < width <= 900px) {
-  .house-logo {
-    width: 60%;
-  }
-
-  .house-background {
-    height: 47.5%;
-    width: 49%;
-  }
-}

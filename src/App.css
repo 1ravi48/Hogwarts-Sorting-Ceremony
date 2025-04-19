@@ -393,36 +393,3 @@
     width: 55%;
   }
 }
-
-@media only screen and (600px < width <= 900px) {
-  .sorting-hat {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 28%;
-    height: auto;
-    transform: translate(
-      -50%,
-      -58%
-    ); /* moves the element backwards on the x and y axis by 50% of its own width and height respectively - ultimately centering it perfectly*/
-  }
-
-  .sorting-hat-not-greet {
-    display: block;
-    position: absolute;
-    left: 50%;
-    top: 53%;
-    transform: translate(-50%);
-    background-color: #f8f4e1;
-    font-size: 120%;
-    font-weight: bolder;
-    color: #262626;
-    padding: 1%;
-    font-family: "Courier New", Courier, monospace;
-    border: solid #262626 7px;
-    border-radius: 10px;
-    text-align: center;
-    width: 30%;
-    cursor: pointer;
-  }
-}
