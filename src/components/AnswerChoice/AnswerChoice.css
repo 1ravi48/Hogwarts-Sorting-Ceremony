@@ -34,7 +34,7 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .answer-choice-div {
     height: 38%;
     width: 48.5%;
