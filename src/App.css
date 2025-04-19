@@ -333,6 +333,12 @@
     top: 3.5%;
     width: 5%;
   }
+  
+  .backward-icon-end:hover {
+    left: 5%;
+    top: 3.5%;
+    width: 5%;
+  }
 
   .click-for-result {
     top: 45%;
