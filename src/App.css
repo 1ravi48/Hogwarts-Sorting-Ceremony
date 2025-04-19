@@ -328,12 +328,23 @@
     width: 77%;
   }
 
+  .backward-icon:hover {
+    position: absolute;
+    color: #262626;
+    left: 50%;
+    transform: translate(-50%);
+    top: 82%;
+    width: 5%;
+    height: auto;
+    cursor: pointer;
+  }
+
   .backward-icon-end {
     left: 5%;
     top: 3.5%;
     width: 5%;
   }
-  
+
   .backward-icon-end:hover {
     left: 5%;
     top: 3.5%;
