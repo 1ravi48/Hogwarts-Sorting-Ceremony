@@ -11,7 +11,7 @@ const questionsArray = [
     questionText:
       "You’re in potions class, and Neville accidentally messed up again. Professor Snape is humiliating him in front of the class, screaming from the top of his lungs and issuing him a week of detentions. Whilst this happens, Neville looks red and is about to burst into tears. As Neville's closest friend, what do you do?",
     answerChoices: [
-      "You scream back at Professor Snape in total outrage. It was just a mistake on Neville's part and you tell Snape he's being a total d***. It gets you in detentions with Neville too.",
+      "You scream back at Professor Snape in total outrage. It was just a mistake on Neville's part and you tell Snape he's being a total ****. It gets you in detentions with Neville too.",
       "You avoid intervening publicly. Your mind has been working, and you stay after class to ‘casually’ mention to Snape that if he keeps targeting Neville, some curious letters about his teaching style might end up with Dumbledore. You notice Snape's lip curl as you smile politely. Nothing is threatened - just implied.",
       "You subtly take notes of exactly what happened - who said what, when, and how. You plan to draft a well-argued, evidence-based letter to Dumbledore, citing both Hogwarts’ student rights and historical precedents for teacher misconduct.",
       "You stand next to Neville the whole time, keeping silent. Once Snape finishes his humiliation, you hug Neville and let him know how despicable Snape was being.",
