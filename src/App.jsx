@@ -267,7 +267,7 @@ export default function App() {
         setResultContent(
           <div className="results-page">
             <img
-              src="/hogwarts-sorting-hat.png"
+              src="/hogwarts-sorting-hat.webp"
               className="sorting-hat-result"
             />
             <div className="result-div">
@@ -288,7 +288,7 @@ export default function App() {
         setResultContent(
           <div className="results-page">
             <img
-              src="/hogwarts-sorting-hat.png"
+              src="/hogwarts-sorting-hat.webp"
               className="sorting-hat-result"
             />
             <div className="result-div">
@@ -310,7 +310,7 @@ export default function App() {
         setResultContent(
           <div className="results-page">
             <img
-              src="/hogwarts-sorting-hat.png"
+              src="/hogwarts-sorting-hat.webp"
               className="sorting-hat-result"
             />
             <div className="result-div">
@@ -333,7 +333,7 @@ export default function App() {
         setResultContent(
           <div className="results-page">
             <img
-              src="/hogwarts-sorting-hat.png"
+              src="/hogwarts-sorting-hat.webp"
               className="sorting-hat-result"
             />
             <div className="result-div">
@@ -484,7 +484,7 @@ export default function App() {
           imagePath="/hufflepuff-logo.png"
         />
         <img
-          src="/hogwarts-sorting-hat.png"
+          src="/hogwarts-sorting-hat.webp"
           className={isHatHover ? "sorting-hat-enlarged" : "sorting-hat"}
           onMouseEnter={handleHatHover}
           onMouseLeave={handleHatLeave}
