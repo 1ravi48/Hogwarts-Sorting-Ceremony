@@ -56,7 +56,7 @@ const questionsArray = [
       "During the Transfiguration exam, you notice a classmate is clearly cheating by using a spell to copy answers from someone else. They’re not a close friend, but they’re not exactly a foe either - just someone desperate to pass. Professor McGonagall doesn’t notice. What do you do?",
     answerChoices: [
       "You’re angered and you can’t let it slide. After the exam, you pull the student aside and tell them firmly and directly: you saw what they did, and it’s not fair to the rest of you who studied. You don’t threaten them - you challenge them. “Next time, do it right,” you say. “Be better.”",
-      "You keep it to yourself - but you do make a mental note. Later, you let them know you saw what they did and suggest that they might want to return the favor sometime in the future. You don’t plan to use it right away, but it never hurts to have leverage.",
+      "You keep it to yourself - but you do make a mental note. Later, you let them know you saw what they did and suggest that they might want to return the favour sometime in the future. You don’t plan to use it right away, but it never hurts to have leverage.",
       "You take little notice, then move on - you’re too focused on your exam, not someone else’s. If they’re cheating, it’ll catch up to them eventually. You trust the system (and logic) to balance things out over time.",
       "You say nothing, but you feel for them - maybe they’re struggling more than you knew. After the exam, you approach them gently and offer to help them study next time. You don’t like what they did, but you’d rather help them do better than see them punished.",
     ],
