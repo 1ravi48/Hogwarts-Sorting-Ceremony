@@ -510,7 +510,7 @@ export default function App() {
           />
         ))}
         <div className="parchment-div">
-          <img src="/parchment.png" className="parchment"></img>
+          <img src="/parchment.webp" className="parchment"></img>
           <h1 className="question-heading">Question {question}</h1>
           <p className="question-text">
             {questionsArray[question - 1].questionText}
