@@ -144,7 +144,7 @@ const questionsArray = [
       "You’ve noticed someone in your year is clearly struggling with magic. They’re getting spells wrong, falling behind, and becoming more withdrawn - but they’re too proud to ask for help. You’re not close friends, but you’ve seen how much they’re slipping. What do you do?",
     answerChoices: [
       "You walk right up to them after class and say, “You very clearly need help.” You don’t sugar-coat it, but you make it clear you're offering support. Whether they like it or not, you’ll be there in the common room tonight, ready to work through spells together. No one gets left behind on your watch.",
-      "You approach them with a deal: “I help you catch up, and you owe me one.” You frame it as a smart alliance, not charity. You get the satisfaction of helping - and possibly a favor owed in return. Pride stays intact, and you stay ahead of the game.",
+      "You approach them with a deal: “I help you catch up, and you owe me one.” You frame it as a smart alliance, not charity. You get the satisfaction of helping - and possibly a favour owed in return. Pride stays intact, and you stay ahead of the game.",
       "You discreetly leave a list of study resources that have helped you on their desk - books, notes, clever spell hacks you’ve developed. You don’t include your name. You just figure if someone’s too proud to ask for help, they might still accept it if it’s anonymous.",
       "You start sitting near them in class, quietly helping when you can - no big gestures, just support where it’s needed. Eventually, you slip them a note offering to revise together. You don’t need thanks - you just want to make sure they don’t feel hopeless.",
     ],
@@ -277,7 +277,7 @@ export default function App() {
               </p>
               <div className="logos-div">
                 <img
-                  src={`/${winningHouse().toLowerCase()}-logo.png`}
+                  src={`/${winningHouse().toLowerCase()}-logo.webp`}
                   className="house-logo-result-single"
                 />
               </div>
@@ -297,7 +297,7 @@ export default function App() {
               </p>
               <div className="logos-div">
                 <img
-                  src={`/${winningHouse().toLowerCase()}-logo.png`}
+                  src={`/${winningHouse().toLowerCase()}-logo.webp`}
                   className="house-logo-result-single"
                 />
               </div>
@@ -321,7 +321,7 @@ export default function App() {
               <div className="logos-div">
                 {winningHouseIndArray().map((index) => (
                   <img
-                    src={`/${fourHouses[index].toLowerCase()}-logo.png`}
+                    src={`/${fourHouses[index].toLowerCase()}-logo.webp`}
                     className="house-logo-result"
                   />
                 ))}
@@ -343,7 +343,7 @@ export default function App() {
               <div className="logos-div">
                 {winningHouseIndArray().map((index) => (
                   <img
-                    src={`/${fourHouses[index].toLowerCase()}-logo.png`}
+                    src={`/${fourHouses[index].toLowerCase()}-logo.webp`}
                     className="house-logo-result"
                   />
                 ))}
@@ -469,19 +469,19 @@ export default function App() {
       <div className="four-colours">
         <HouseColourBackground
           backgroundColor="#95103b"
-          imagePath="/gryffindor-logo.png"
+          imagePath="/gryffindor-logo.webp"
         />
         <HouseColourBackground
           backgroundColor="#1d7452"
-          imagePath="/slytherin-logo.png"
+          imagePath="/slytherin-logo.webp"
         />
         <HouseColourBackground
           backgroundColor="#97b6d3"
-          imagePath="/ravenclaw-logo.png"
+          imagePath="/ravenclaw-logo.webp"
         />
         <HouseColourBackground
           backgroundColor="#ffebb9"
-          imagePath="/hufflepuff-logo.png"
+          imagePath="/hufflepuff-logo.webp"
         />
         <img
           src="/hogwarts-sorting-hat.webp"
@@ -528,19 +528,19 @@ export default function App() {
       <div className="four-colours">
         <HouseColourBackground
           backgroundColor="#95103b"
-          imagePath="/gryffindor-logo.png"
+          imagePath="/gryffindor-logo.webp"
         />
         <HouseColourBackground
           backgroundColor="#1d7452"
-          imagePath="/slytherin-logo.png"
+          imagePath="/slytherin-logo.webp"
         />
         <HouseColourBackground
           backgroundColor="#97b6d3"
-          imagePath="/ravenclaw-logo.png"
+          imagePath="/ravenclaw-logo.webp"
         />
         <HouseColourBackground
           backgroundColor="#ffebb9"
-          imagePath="/hufflepuff-logo.png"
+          imagePath="/hufflepuff-logo.webp"
         />
         <p className="click-for-result" onClick={handleResultClick}>
           Click here to join your house!
