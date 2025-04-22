@@ -44,7 +44,7 @@ const questionsArray = [
     questionText:
       "You discover the Room of Requirement and find a powerful magical object inside - one that could give you a major edge in your studies. No one else knows it's there. What do you do?",
     answerChoices: [
-      "You pick it up fast, staring at it with excitement. Then feel your conscience kick in strongly. As tempting as it is, using something no one else has access to just feels wrong. You leave it behind - you’d rather earn your place than win through an unfair advantage.",
+      "You pick it up fast, staring at it with excitement. Then, you feel your conscience kick in strongly. As tempting as it is, using something no one else has access to just feels wrong. You leave it behind - you’d rather earn your place than win through an unfair advantage.",
       "You immediately think about how to use it smartly to your advantage. You stash the item somewhere only you can access, and begin using it to climb the academic ladder, gain recognition, and position yourself for future power. No one needs to know where your sudden improvement came from.",
       "You study the object thoroughly - the enchantments, runes, its history, its magical theory. This is a once-in-a-lifetime learning opportunity, and your curiosity is too powerful to ignore. You don’t use it carelessly, but you do test its effects... for research, of course.",
       "You take time to understand what the object is and whether it’s safe or fair to use. You write down everything you learned about the room and plan to tell the professors about what you have discovered. If this could help people learn, it should be shared for everyone to use.",
