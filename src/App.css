@@ -112,6 +112,7 @@
   font-family: "Courier New", Courier, monospace;
   text-align: center;
   font-size: 3.4vw;
+  width: 100%;
 }
 
 .question-text {
@@ -137,6 +138,10 @@
   width: 4%;
   height: auto;
   cursor: pointer;
+}
+
+.total {
+  font-size: 1.5vw;
 }
 
 .backward-icon:hover {
@@ -262,6 +267,10 @@
     font-size: 240%;
   }
 
+  .total {
+    font-size: 50%;
+  }
+
   .question-text {
     font-size: 115%;
   }
@@ -320,6 +329,10 @@
 
   .question-heading {
     font-size: 6.2vw;
+  }
+
+  .total {
+    font-size: 3vw;
   }
 
   .question-text {
